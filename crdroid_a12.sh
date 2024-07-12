@@ -20,6 +20,13 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Unnecessary things to remove.
+rm -rf hardware/lineage/interfaces
+echo "============="
+echo "Removing Done"
+echo "============="
+
+
 # Export
 export BUILD_USERNAME=F3
 export BUILD_HOSTNAME=crave
