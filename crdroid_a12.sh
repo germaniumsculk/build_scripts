@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Unnecessary things to remove.
-rm -rf hardware/lineage/interfaces
+rm -rf hardware/lineage/interfaces/health
 echo "============="
 echo "Removing Done"
 echo "============="
