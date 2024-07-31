@@ -42,4 +42,4 @@ lunch lineage_Mi439_4_19-userdebug
 echo "============="
 
 # Build rom
-mka build
+mka bacon
