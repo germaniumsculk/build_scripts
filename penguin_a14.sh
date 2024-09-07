@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch aosp_mi439-userdebug
+lunch aosp_mi439-ap2a-userdebug
 echo "============="
 
 # Build rom
