@@ -14,11 +14,16 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# build
+# Build Sync
 /opt/crave/resync.sh 
 echo "============="
 echo "Sync success"
 echo "============="
+
+# Revert Commit
+cd device/xiaomi/mi439
+git revert f4437b7
+cd ../../..
 
 # Export
 export BUILD_USERNAME=F3
