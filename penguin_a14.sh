@@ -20,11 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Revert Commit
-cd device/xiaomi/mi439
-git revert f4437b7
-cd ../../..
-
 # Export
 export BUILD_USERNAME=F3
 export BUILD_HOSTNAME=crave
@@ -32,12 +27,4 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh 
-echo "====== Envsetup Done ======="
-
-# Lunch
-lunch aospa_mi439-userdebug
-echo "============="
-
-# Build rom
-mka bacon
+./rom-build.sh mi439
