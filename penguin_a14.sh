@@ -27,4 +27,4 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
-./rom-build.sh mi439
+./rom-build.sh mi439_419
