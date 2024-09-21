@@ -26,5 +26,11 @@ export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
+# Git
+cd device/xiaomi/mi439
+git fetch https://gerrit.aospa.co/AOSPA/android_device_xiaomi_mi439 refs/changes/57/41357/1 && git cherry-pick FETCH_HEAD
+cd ../../../
+echo "======= Git Changes Done ======"
+
 # Set up build environment
 ./rom-build.sh mi439_419
