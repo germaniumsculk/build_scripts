@@ -2,6 +2,8 @@
 
 rm -rf .repo/local_manifests/
 
+rm -rf vendor/xiaomi
+
 # repo init rom
 repo init -u https://github.com/Project-PenguinOS/manifest -b unity
 echo "=================="
