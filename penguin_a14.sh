@@ -20,6 +20,12 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Removing Unnecessary things 
+rm -rf device/qcom/common/sepolicy/pixel/vendor/flipendo.te
+echo "================="
+echo "I love you Salih"
+echo "================="
+
 # Export
 export BUILD_USERNAME=F3
 export BUILD_HOSTNAME=crave
