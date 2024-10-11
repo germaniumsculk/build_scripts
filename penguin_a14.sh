@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/musfiqurrahmanfahim/local_manifests_clo .repo/local_manifests -b aospa-uvite
+git clone https://github.com/germaniumsculk/local_manifests_clo .repo/local_manifests -b penguin-unity
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -20,12 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Removing Unnecessary things 
-rm -rf device/qcom/common/sepolicy/pixel/vendor/flipendo.te
-echo "================="
-echo "I love you Salih"
-echo "================="
-
 # Export
 export BUILD_USERNAME=F3
 export BUILD_HOSTNAME=crave
@@ -33,8 +27,8 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Git
-cd device/xiaomi/mi439
-git fetch https://gerrit.aospa.co/AOSPA/android_device_xiaomi_mi439 refs/changes/57/41357/1 && git cherry-pick FETCH_HEAD
+cd vendor/google/gms
+curl -O https://raw.githubusercontent.com/germaniumsculk/android_vendor_gms/refs/heads/main/gms-vendor.mk
 cd ../../../
 echo "======= Git Changes Done ======"
 
