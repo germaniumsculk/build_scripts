@@ -33,4 +33,4 @@ cd ../../../
 echo "======= Git Changes Done ======"
 
 # Set up build environment
-./rom-build.sh mi439_419
+./rom-build.sh mi439_419 -s ~/.android-certs
