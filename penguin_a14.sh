@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=F3
+export BUILD_USERNAME=Germanium 
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
@@ -31,6 +31,12 @@ cd vendor/google/gms
 curl -O https://raw.githubusercontent.com/germaniumsculk/android_vendor_gms/refs/heads/main/gms-vendor.mk
 cd ../../../
 echo "======= Git Changes Done ======"
+
+# Signing
+curl -O https://raw.githubusercontent.com/germaniumsculk/Signing-Script/refs/heads/master/generate_key.sh
+chmod +x generate_key.sh
+./generate_key.sh
+echo "======== Signing Done ======="
 
 # Set up build environment
 ./rom-build.sh mi439_419 -s ~/.android-certs
