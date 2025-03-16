@@ -43,7 +43,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_mi439-ap3a-userdebug
+lunch lineage_mi439-ap2a-userdebug
 
 # Build
 mka bacon
