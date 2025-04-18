@@ -32,6 +32,11 @@ git clone https://github.com/germaniumsculk/certs
 
 # Have to add these flags in device.mk
 
+# Build/Soong Cherry pick
+cd build/soong
+git fetch https://github.com/LineageOS/android_build_soong refs/changes/98/426698/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
 # Export
 export BUILD_USERNAME=Germanium 
 export BUILD_HOSTNAME=crave
