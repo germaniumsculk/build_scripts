@@ -54,4 +54,4 @@ echo "============="
 lunch lineage_lavender-bp2a-userdebug
 
 # Build
-mka bacon
+m evolution
