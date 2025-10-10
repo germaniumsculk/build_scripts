@@ -51,7 +51,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch infinity_lavender-bp2a-user
+lunch infinity_lavender-user
 
 # Build
 mka bacon
