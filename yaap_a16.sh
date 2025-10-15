@@ -1,4 +1,3 @@
-#!/bin/bash
 # --------------------------------------
 # Make sure that you know what are you
 # wanna do with this.
@@ -39,6 +38,7 @@ git clone https://github.com/germaniumsculk/certs
 
 # FSgen removal
 rm -rf build/soong/fsgen
+rm -rf hardware/google
 
 # Export
 export BUILD_USERNAME=Germanium 
