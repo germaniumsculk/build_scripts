@@ -38,7 +38,7 @@ git clone https://github.com/germaniumsculk/certs
 
 # FSgen removal
 rm -rf build/soong/fsgen
-rm -rf hardware/google
+rm -rf hardware/google/graphics/common
 
 # Export
 export BUILD_USERNAME=Germanium 
