@@ -5,6 +5,7 @@
 # --------------------------------------
 
 rm -rf .repo/local_manifests/
+rm -rf hardware/xiaomi
 
 # repo init rom
 repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs
