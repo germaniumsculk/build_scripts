@@ -5,7 +5,6 @@
 # --------------------------------------
 
 rm -rf .repo/local_manifests/
-rm -rf hardware/xiaomi
 
 # repo init rom
 repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs
@@ -39,7 +38,7 @@ git clone https://github.com/germaniumsculk/certs
 
 # FSgen removal
 rm -rf build/soong/fsgen
-rm -rf hardware/google/graphics/common
+rm -rf hardware/google/graphics
 
 # Export
 export BUILD_USERNAME=Germanium 
