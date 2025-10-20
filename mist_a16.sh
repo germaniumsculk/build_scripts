@@ -6,6 +6,7 @@
 # --------------------------------------
 
 rm -rf .repo/local_manifests/
+rm -rf kernel/device/lavender
 
 # repo init rom
 repo init -u https://github.com/Project-Mist-OS/manifest -b bp2a --git-lfs
