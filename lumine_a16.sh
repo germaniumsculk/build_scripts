@@ -49,4 +49,5 @@ echo "============="
 lunch lineage_lavender-bp2a-user
 
 # Build
+mka bootimage
 mka bacon
