@@ -5,9 +5,6 @@
 # --------------------------------------
 
 rm -rf .repo/local_manifests/
-rm -rf vendor
-rm -rf packages
-rm -rf external
 
 # repo init rom
 repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs
