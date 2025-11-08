@@ -11,5 +11,7 @@ echo "============="
 # Lunch
 lunch lineage_lavender-bp2a-user
 
-# Build
-mka bacon
+# Clean Build
+make clean
+# Then rebuild
+make -j$(nproc --all)
