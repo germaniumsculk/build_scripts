@@ -8,7 +8,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka-q1-los --git-lfs
 echo "=================="
 echo "Repo init done"
 echo "=================="
@@ -51,7 +51,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_lavender-bp2a-userdebug
+lunch lineage_lavender-bp3a-userdebug
 
 # Build
 m evolution
