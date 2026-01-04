@@ -1,7 +1,6 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf vendor/opensourcerequest
 
 # repo init rom
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
@@ -10,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/germaniumsculk/local_manifests_lavender .repo/local_manifests -b axion-2.x
+git clone https://github.com/f6basher/local_manifests_lavender .repo/local_manifests -b axion-2.x
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -22,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Curl Signing Files
-git clone https://github.com/germaniumsculk/certs
+git clone https://github.com/f6basher/certs
 
 #SIGNING_KEY_PATH ?= certs
 #RELEASE_KEY := $(SIGNING_KEY_PATH)/releasekey
