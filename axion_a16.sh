@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf hardware/qcom-caf
 
 # repo init rom
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
